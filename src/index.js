@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Greeting from "./components/greeting";
 
 import "./styles.css";
 
-function App({ message }) {
+function App() {
   return (
     <div className="App">
-      <h1>{message}</h1>
+      <Greeting message="Hello World." />
     </div>
   );
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App message="Hello World." />, rootElement);
+ReactDOM.render(<App />, rootElement);
